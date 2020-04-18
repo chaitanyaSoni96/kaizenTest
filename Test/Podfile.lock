@@ -1,0 +1,26 @@
+PODS:
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
+  - TLPhotoPicker (2.0.11)
+
+DEPENDENCIES:
+  - RealmSwift
+  - TLPhotoPicker
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+    - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
+  TLPhotoPicker: a5c339732b8326bb16cbb4e00ed01a86f2bfbbb3
+
+PODFILE CHECKSUM: 3fd8dd308493999d46283602e6aafb2e5c7c5758
+
+COCOAPODS: 1.9.1

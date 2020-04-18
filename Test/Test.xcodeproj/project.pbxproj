@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,14 @@
 		284E1451244A6F9C00BE117C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284E144F244A6F9C00BE117C /* Main.storyboard */; };
 		284E1453244A6F9D00BE117C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284E1452244A6F9D00BE117C /* Assets.xcassets */; };
 		284E1456244A6F9D00BE117C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284E1454244A6F9D00BE117C /* LaunchScreen.storyboard */; };
+		284E145E244A7C6F00BE117C /* EmployeeDirectoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E145D244A7C6F00BE117C /* EmployeeDirectoryTableViewController.swift */; };
+		284E1460244A7C8B00BE117C /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E145F244A7C8B00BE117C /* AttendanceViewController.swift */; };
+		284E1462244A7C9C00BE117C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E1461244A7C9C00BE117C /* GalleryViewController.swift */; };
+		686C3B6DAC423072E8F17400 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8172608690616A7AF21E1F14 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08EE14BCEAFCF3B16B38C854 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		284E1446244A6F9C00BE117C /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284E1449244A6F9C00BE117C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284E144D244A6F9C00BE117C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		284E1452244A6F9D00BE117C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284E1455244A6F9D00BE117C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284E1457244A6F9D00BE117C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284E145D244A7C6F00BE117C /* EmployeeDirectoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectoryTableViewController.swift; sourceTree = "<group>"; };
+		284E145F244A7C8B00BE117C /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		284E1461244A7C9C00BE117C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		2B79B149CFF7F103FCA56DBA /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
+		8172608690616A7AF21E1F14 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686C3B6DAC423072E8F17400 /* Pods_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		279EE8FA0A94C36CCEA353C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08EE14BCEAFCF3B16B38C854 /* Pods-Test.debug.xcconfig */,
+				2B79B149CFF7F103FCA56DBA /* Pods-Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		284E143D244A6F9C00BE117C = {
 			isa = PBXGroup;
 			children = (
 				284E1448244A6F9C00BE117C /* Test */,
 				284E1447244A6F9C00BE117C /* Products */,
+				279EE8FA0A94C36CCEA353C3 /* Pods */,
+				DA6DB537DD62CE0CEB1C42F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +78,23 @@
 			children = (
 				284E1449244A6F9C00BE117C /* AppDelegate.swift */,
 				284E144D244A6F9C00BE117C /* LoginViewController.swift */,
+				284E145D244A7C6F00BE117C /* EmployeeDirectoryTableViewController.swift */,
+				284E145F244A7C8B00BE117C /* AttendanceViewController.swift */,
+				284E1461244A7C9C00BE117C /* GalleryViewController.swift */,
 				284E144F244A6F9C00BE117C /* Main.storyboard */,
 				284E1452244A6F9D00BE117C /* Assets.xcassets */,
 				284E1454244A6F9D00BE117C /* LaunchScreen.storyboard */,
 				284E1457244A6F9D00BE117C /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		DA6DB537DD62CE0CEB1C42F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8172608690616A7AF21E1F14 /* Pods_Test.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 284E145A244A6F9D00BE117C /* Build configuration list for PBXNativeTarget "Test" */;
 			buildPhases = (
+				99C4A20F15FCF10292E4F150 /* [CP] Check Pods Manifest.lock */,
 				284E1442244A6F9C00BE117C /* Sources */,
 				284E1443244A6F9C00BE117C /* Frameworks */,
 				284E1444244A6F9C00BE117C /* Resources */,
+				FE9FC1A85A0401AE2F6D1DE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		99C4A20F15FCF10292E4F150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9FC1A85A0401AE2F6D1DE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		284E1442244A6F9C00BE117C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				284E144E244A6F9C00BE117C /* LoginViewController.swift in Sources */,
+				284E145E244A7C6F00BE117C /* EmployeeDirectoryTableViewController.swift in Sources */,
+				284E1462244A7C9C00BE117C /* GalleryViewController.swift in Sources */,
 				284E144A244A6F9C00BE117C /* AppDelegate.swift in Sources */,
+				284E1460244A7C8B00BE117C /* AttendanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +358,11 @@
 		};
 		284E145B244A6F9D00BE117C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08EE14BCEAFCF3B16B38C854 /* Pods-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EKLMW4PJ2F;
+				DEVELOPMENT_TEAM = G532NR9XEM;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,10 +377,11 @@
 		};
 		284E145C244A6F9D00BE117C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B79B149CFF7F103FCA56DBA /* Pods-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EKLMW4PJ2F;
+				DEVELOPMENT_TEAM = G532NR9XEM;
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
